@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="weather-app">
+        <h1>Weather Dashboard</h1>
+        
+        <!-- 🔍 SEARCH FORM -->
+        <form id="search-form">
+            <input 
+                type="text" 
+                id="city-input" 
+                placeholder="Enter city name..."
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- ⏳ LOADING -->
+        <div id="loading" class="hidden">
+            Loading...
+        </div>
+
+        <!-- ❌ ERROR -->
+        <div id="error" class="hidden error"></div>
+
+        <!-- 🌤️ CURRENT WEATHER -->
+        <div id="weather-display" class="hidden">
+            <div class="weather-main">
+                <h2 id="city-name"></h2>
+                <img id="weather-icon" src="" alt="Weather icon">
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail">
+                    <span>Feels Like</span>
+                    <span id="feels-like"></span>
+                </div>
+                <div class="detail">
+                    <span>Humidity</span>
+                    <span id="humidity"></span>
+                </div>
+                <div class="detail">
+                    <span>Wind</span>
+                    <span id="wind"></span>
+                </div>
+                <div class="detail">
+                    <span>Pressure</span>
+                    <span id="pressure"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 📅 5-DAY FORECAST -->
+        <div id="forecast" class="hidden">
+            <h3>5-Day Forecast</h3>
+            <div id="forecast-container"></div>
+        </div>
+
+        <!-- 🕘 RECENT SEARCHES -->
+        <div id="recent-searches">
+            <h3>Recent Searches</h3>
+            <ul id="search-history"></ul>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+
+</body>
+</html>

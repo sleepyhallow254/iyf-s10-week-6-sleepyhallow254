@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.weather-app {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+input, button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button {
+  background: #38bdf8;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.weather-details {
+  margin-top: 15px;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-history li {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#search-history li:hover {
+  color: #38bdf8;
+}
