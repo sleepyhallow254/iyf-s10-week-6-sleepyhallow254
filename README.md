@@ -36,4 +36,4 @@ This project is a Weather Dashboard application that uses the OpenWeatherMap API
 ## How to Run
 1. Clone this repository:
    ```bash
-  git clone https://github.com/sleepyhallow254/iyf-s10-week-6-sleepyhallow254s
+  git clone https://github.com/sleepyhallow254/iyf-s10-week-6-sleepyhallow254
